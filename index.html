@@ -10,11 +10,22 @@
 
 
     <script type="module">
-        let a = [1,2,4,100];
-        a.push(50); //Add a new item at the end of an array
-        a.pop(50); //Remove a new item which is the placed at the end of an array 
-        console.log(typeof a); //Array is an object 
-        console.log(a[0], a[1],a[2],a[3],a[4]); //Individual index access in an array index is just a location or place 
+        let num = [1,2,4,100];
+        
+        let b = num.toString(); //this method .tostring() converts the integers into string
+        
+        
+        // let c = num.shift(); //removes first element and returns it 
+        let c = num.unshift(2); // adds an element at the begining of an array , it's also return the length of array 
+
+        console.log(c, num); 
+        
+        // let c = num.join(` and `); //The .join method join _ between the integers 
+        // a.push(50); //Add a new item at the end of an array, push return the new array length 
+        // a.pop(50); //Remove a new item which is placed at the end of an array, pop return popped element 
+        
+        
+        // console.log(a[0], a[1],a[2],a[3],a[4]); //Individual index access in an array index is just a location or place 
         
 
     </script>
